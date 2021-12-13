@@ -70,7 +70,7 @@ const SearchBooks = () => {
 
     try {
       const response = await saveBook({
-        variables: { bookToSave, token } });
+        variables: { bookToSave } });
 
       if (!response.ok) {
         throw new Error('something went wrong!');
